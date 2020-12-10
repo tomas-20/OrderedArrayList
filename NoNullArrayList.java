@@ -19,4 +19,8 @@ public class NoNullArrayList<T> extends ArrayList<T> {
     check(item);
     super.add(n, item);
   }
+  public T set(int n, T item) {
+    check(item);
+    return super.set(n, item);
+  }
 }
